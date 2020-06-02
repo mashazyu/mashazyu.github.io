@@ -1,0 +1,83 @@
+@media only screen and (max-width: 480px) {
+  .container {margin: 3%;}
+  .side-column-container {flex-basis: 100%;}
+  .article-container {flex-basis: 100%;}
+  .skills {width: 100%;}
+  .about-block {margin-bottom: 1em;}
+
+  .tile {
+    height: 5rem;
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .container {margin: 5%;}
+  .side-column-container {flex-basis: 45%;}
+  .article-container {flex-basis: 100%;}
+
+  .about-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tile {
+    height: 6rem;
+    flex-basis: 45%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {margin: 5% 10%;}
+}
+
+@media only screen and (min-width: 768px) {
+  .container {margin: 5% 15%;}
+}
+
+@media only screen and (min-width: 992px) {
+  .skills{flex-basis: 35%;}
+  .side-column-container {flex-basis: 100%;}
+  .article-container {flex-basis: 59%;}
+  .about-block {flex-basis: 35%;}
+
+  .tile {
+    height: 9rem;
+    flex-basis: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {margin: 5% 25%;}
+}
+
+@media print {
+  h1, h2, h3 {font-size: 1rem;}
+  h1, h2 {margin: 1rem 0;}
+
+  p, th, ul, li {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
+
+  .tile { height: 4rem;}
+  .skills {flex-basis: 35%;}
+  .side-column-container {flex-basis: 100%;}
+  .article-container {flex-basis: 59%;}
+  .about-block {flex-basis: 35%;}
+
+  .tile {
+   height: 9rem;
+   flex-basis: 30%;
+  }
+}

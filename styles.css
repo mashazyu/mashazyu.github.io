@@ -1,0 +1,103 @@
+:root {--accent-color: #2D567A;}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {font-family: 'Libre Franklin', sans-serif;}
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: var(--accent-color);
+}
+
+h1, h2 {font-size: 1.3rem;}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+h2 {margin: 3rem 0 2rem 0;}
+h3 {font-size: 1rem;}
+
+p, th, ul, li {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 4%;
+ }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {vertical-align: top;}
+
+.about-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.about-line p {text-align: right;}
+.work-experience-line h3,
+.work-experience-line p {display: inline;}
+.work-experience-line p {margin-left: 1rem;}
+.side-menu-table {width: 100%;}
+
+.side-menu-table  tr th:first-child {
+  text-align: left;
+  width: 40%;
+}
+
+.side-menu-table tr th:last-child {
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 0rem;
+  color: var(--accent-color);
+  letter-spacing: 0.5rem;
+}
+
+.main-area-table {
+  width: 100%;
+  text-align: left;
+}
+
+.main-area-table tr th:first-child {width: 30%;}
+.tile {padding: 1rem 1rem 1rem 0;}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
