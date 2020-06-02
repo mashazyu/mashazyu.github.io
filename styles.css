@@ -101,3 +101,9 @@ th {vertical-align: top;}
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+}
