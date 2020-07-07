@@ -1,4 +1,9 @@
-:root {--accent-color: #2D567A;}
+:root {
+  --accent-color: #1e35a4;
+  --accent-color-light: #334759;
+  --link-color: #262450;
+  --visited-link-color: #7F7478;
+}
 
 * {
   margin: 0;
@@ -6,14 +11,19 @@
   box-sizing: border-box;
 }
 
+a {color: var(--link-color);}
+a:visited {color: var(--visited-link-color);}
+
 html {font-family: 'Libre Franklin', sans-serif;}
 
-h1, h2, h3 {
-  font-family: "Trebuchet MS", Verdana, sans-serif;
+h1, h2, h3 {font-family: "Trebuchet MS", Verdana, sans-serif;}
+
+h1, h2 {
   color: var(--accent-color);
+  font-size: 1.3rem;
 }
 
-h1, h2 {font-size: 1.3rem;}
+h3 {color: var(--accent-color-light);}
 
 h1 {
   text-transform: uppercase;
@@ -36,10 +46,10 @@ img {
   margin-bottom: 2rem
 }
 
-ul {
-  list-style-type: square;
-  margin-left: 4%;
- }
+select {
+  border: 0;
+  margin-left: 2rem;
+}
 
 table {
   border-collapse: collapse;
@@ -48,14 +58,19 @@ table {
 
 th {vertical-align: top;}
 
-.about-line {
+ul {
+  list-style-type: square;
+  margin-left: 4%;
+ }
+
+.line {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
-
-.about-line p {text-align: right;}
+.header {width: 100%;}
+.line p {text-align: right;}
 .work-experience-line h3,
 .work-experience-line p {display: inline;}
 .work-experience-line p {margin-left: 1rem;}
@@ -70,7 +85,7 @@ th {vertical-align: top;}
   text-align: right;
   font-size: 1.5rem;
   padding: 0rem;
-  color: var(--accent-color);
+  color: var(--accent-color-light);
   letter-spacing: 0.5rem;
 }
 
@@ -106,4 +121,8 @@ th {vertical-align: top;}
   display: flex;
   justify-content: center;
   font-size: 0.7rem;
+}
+
+.footer a {
+  margin: 0 0.25rem;
 }
