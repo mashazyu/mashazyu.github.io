@@ -14,44 +14,92 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var language;
+    var translations;
+
+    function loadTranslations() {
+      const path = '/locales/' + language + '.json';
+
+      $.getJSON(path)
+        .done( (data) => {
+          translations = data;
+
+          Object.keys(translations).forEach(key => {
+            $(`#${key}`).text(translations[key]);
+          });
+        });
+    }
+
+    window.onload = function() {
+      language = 'en';
+
+      loadTranslations();
+    }
+
+    function changeLanguage() {
+      language = language === 'en' ? 'de' : 'en';
+
+      loadTranslations();
+    }
+  </script>
 </head>
 <body>
   <section class="container">
     <section class="about">
-      <h1>maria zadnepryanets - jr. front-end developer</h1>
+      <div class="line header">
+        <h1 id="title">maria zadnepryanets - jr. front-end developer</h1>
+        <select onchange="changeLanguage()">
+          <option value="en">EN</option>
+          <option value="fr">DE</option>
+        </select>
+      </div>
       <section class="about-block">
         <div class="side-column-container">
           <img src="assets/foto.jpg" alt="maria's photo" >
         </div>
         <div class="side-column-container">
-          <div class="about-line"><h3>visa:</h3><p>residence permit</p></div>
-          <div class="about-line"><h3>date of birth:</h3><p>24.05.1982</p></div>
-          <div class="about-line"><h3>address:</h3><p>Chodowieckistr. 30, Berlin</p></div>
-          <div class="about-line"><h3>email:</h3><p><a href="mailto:mariya.z@gmail.com">mariya.z@gmail.com</a></p></div>
-          <div class="about-line"><h3>mobile:</h3><p>+49 162 398 4193</p></div>
-          <div class="about-line"><a href="https://mashazyu.github.io/"><h3>website</h3></a></div>
+          <div class="line">
+            <h3 id="about-visa">visa:</h3><p id="about-visa-value">residence permit</p>
+          </div>
+          <div class="line">
+            <h3 id="about-date-of-birth">date of birth:</h3><p>24.05.1982</p>
+          </div>
+          <div class="line">
+            <h3 id="about-address">address:</h3><p>Chodowieckistr. 30, Berlin</p>
+          </div>
+          <div class="line">
+            <h3 id="about-email">email:</h3><p><a href="mailto:mariya.z@gmail.com">mariya.z@gmail.com</a></p>
+          </div>
+          <div class="line">
+            <h3 id="about-mobile">mobile:</h3><p>+49 162 398 4193</p>
+          </div>
+          <div class="line">
+            <a href="https://mashazyu.github.io/"><h3 id="about-website">website</h3></a>
+          </div>
         </div>
       </section>
       <section class="article-container">
-        <p>I’m looking for an opportunity to join a Software Development team to</p>
+        <p id="about-intro">I’m looking for an opportunity to join a Software Development team to</p>
         <ul>
-          <li>apply and widen my technical skills,</li>
-          <li>work on interesting project and</li>
-          <li>learn how to solve complex problems with simple code.</li>
+          <li id="about-point1">apply and widen my technical skills,</li>
+          <li id="about-point2">work on interesting project and</li>
+          <li id="about-point3">learn how to solve complex problems with simple code.</li>
         </ul>
         <section>
-          <h2>projects</h2>
+          <h2 id="projects">projects</h2>
           <div class="tile-container">
             <div class="tile">
-              <h3><a href="https://github.com/mashazyu/drip" target="_blank">drip (open source)</a></h3>
+              <h3 id="projects-drip"><a href="https://github.com/mashazyu/drip" target="_blank">drip (open source)</a></h3>
               <p>React Native, e2e tests</p>
             </div>
             <div class="tile">
               <h3><a href="https://github.com/mashazyu/adventofcode" target="_blank">Advent of Code</a></h3>
-              <p>Node.js, TDD, programming puzzles</p>
+              <p id="projects-aoc-description">Node.js, TDD, programming puzzles</p>
             </div>
             <div class="tile">
-              <h3><a href="https://github.com/mashazyu/dictionary-search" target="_blank">Dictionary search</a></h3>
+              <h3 id="projects-search"><a href="https://github.com/mashazyu/dictionary-search" target="_blank">Dictionary search</a></h3>
               <p>Node.js, REST API</p>
             </div>
             <div class="tile">
@@ -65,7 +113,7 @@
     <section class="skills">
       <div class="side-column-container">
         <section>
-          <h2>technical skills</h2>
+          <h2 id="technical-skills">technical skills</h2>
           <table class="side-menu-table">
             <tr>
               <th>
@@ -144,10 +192,10 @@
       </div>
       <div class="side-column-container">
         <section>
-          <h2>languages</h2>
+          <h2 id="languages">languages</h2>
           <table class="side-menu-table">
             <tr>
-              <th>
+              <th id="languages-en">
                 English
               </th>
               <th>
@@ -155,7 +203,7 @@
               </th>
             </tr>
             <tr>
-              <th>
+              <th id="languages-de">
                 German
               </th>
               <th>
@@ -163,7 +211,7 @@
               </th>
             </tr>
             <tr>
-              <th>
+              <th id="languages-de">
                 Russian
               </th>
               <th>
@@ -173,80 +221,92 @@
           </table>
         </section>
         <section>
-          <h2>soft skills</h2>
-          <p>Reliable & Structured</p>
-          <p>Creative & Solution-oriented</p>
-          <p>Teamplayer & Open-minded</p>
+          <h2 id="soft-skills">soft skills</h2>
+          <p id="soft-skills-line1">Reliable & Structured</p>
+          <p id="soft-skills-line2">Creative & Solution-oriented</p>
+          <p id="soft-skills-line3">Teamplayer & Open-minded</p>
         </section>
       <div>
     </section>
     <article class="article-container">
       <section>
-        <h2>work experience</h2>
+        <h2 id="work-experience">work experience</h2>
         <table class="main-area-table">
           <tr>
-            <th>2019 - now</th>
+            <th id="work-period1">2019 - now</th>
             <th>
-              <div class="work-experience-line"><h3>Contributor,</h3><p>drip</p></div>
+              <div class="work-experience-line">
+                <h3 id="work-title1">Contributor,</h3>
+                <p>drip</p>
+              </div>
               <ul>
-                <li>new feature development</li>
-                <li>e2e tests development</li>
-                <li>redesign & refactoring</li>
+                <li id="work1-description1">new feature development</li>
+                <li id="work1-description2">e2e tests development</li>
+                <li id="work1-description3">redesign & refactoring</li>
               </ul>
             </th>
           </tr>
           <tr>
             <th>2018 - 2019</th>
             <th>
-              <div class="work-experience-line"><h3>Interpreter (DE &#8596; RU),</h3><p>social sphere</p></div>
+              <div class="work-experience-line">
+                <h3 id="work-title2">Interpreter (DE &#8596; RU),</h3>
+                <p id="work-place2">social sphere</p>
+              </div>
               <ul>
-                <li>interpreting between refugees & social/government workers, doctors, etc.</li>
+                <li id="work2-description1">interpreting between refugees & social/government workers, doctors, etc.</li>
               </ul>
             </th>
           </tr>
           <tr>
             <th>2016 - 2017</th>
             <th>
-              <div class="work-experience-line"><h3>Project manager,</h3><p>software and marketing teams</p></div>
+              <div class="work-experience-line">
+                <h3 id="work-title3">Project manager,</h3>
+                <p id="work-place3">software and marketing teams</p>
+              </div>
               <ul>
-                <li>conceptualizing, planning, execution of projects</li>
-                <li>reporting of the project status/outcomes to key stakeholders</li>
+                <li id="work3-description1">conceptualizing, planning, execution of projects</li>
+                <li id="work3-description2">reporting of the project status/outcomes to key stakeholders</li>
               </ul>
             </th>
           </tr>
           <tr>
             <th>2003 - 2014</th>
             <th>
-              <div class="work-experience-line"><h3>Support Rep => Department Manager,</h3><p>SaaS provider</p></div>
+              <div class="work-experience-line">
+                <h3 id="work-title4">Support Rep => Department Manager,</h3>
+                <p id="work-place4">SaaS provider</p>
+              </div>
               <ul>
-                <li>planning, budgeting and overseeing department operations</li>
+                <li id="work4-description1">planning, budgeting and overseeing department operations</li>
               </ul>
             </th>
           </tr>
         </table>
       </section>
       <section>
-        <h2>education</h2>
+        <h2 id="education">education</h2>
         <table class="main-area-table">
           <tr>
             <th>2014 - 2017</th>
             <th>
-              <h3>Master in Project Management</h3>
+              <h3 id="education-title1">Master in Project Management</h3>
               <p>Fachhochschule Dortmund, DE</p>
             </th>
           </tr>
           <tr>
             <th>1999 - 2005</th>
             <th>
-              <h3>Master in Computer Science</h3>
-              <p>St. Petersburg State Polytechnical University, RU</p>
+              <h3 id="education-title2">Master in Computer Science</h3>
+              <p id="education-uni2">St. Petersburg State Polytechnical University, RU</p>
             </th>
           </tr>
           <tr>
             <th>1999 - 2005</th>
             <th>
-              <h3>Degree in Management</h3>
-              <p>St. Petersburg State Polytechnical University, RU</p>
+              <h3 id="education-title3">Degree in Management</h3>
+              <p id="education-uni2">St. Petersburg State Polytechnical University, RU</p>
             </th>
           </tr>
         </table>
