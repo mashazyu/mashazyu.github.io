@@ -76,6 +76,8 @@ ul {
 .work-experience-line p {margin-left: 1rem;}
 .side-menu-table {width: 100%;}
 
+.work-experience-stack {font-weight: 500;}
+
 .side-menu-table  tr th:first-child {
   text-align: left;
   width: 40%;

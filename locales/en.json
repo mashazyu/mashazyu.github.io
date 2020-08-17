@@ -1,5 +1,5 @@
 {
-  "title": "maria zadnepryanets - jr. front-end developer",
+  "title": "maria zadnepryanets - jr. frontend developer",
   "about-visa": "visa:",
   "about-visa-value": "residence permit",
   "about-date-of-birth": "date of birth:",
@@ -26,6 +26,10 @@
   "soft-skills-line2": "Creative & Solution-oriented",
   "soft-skills-line3": "Teamplayer & Open-minded",
   "work-experience": "work experience",
+  "work-period0": "2020 - now",
+  "work0-description1": "new feature development",
+  "work0-description2": "tests development",
+  "work0-description3": "preparaiton of technical requirements and wireframes",
   "work-period1": "2019 - now",
   "work-title1": "Contributor,",
   "work1-description1": "new feature development",
@@ -45,5 +49,6 @@
   "education-title1": "Master in Project Management",
   "education-title2": "Master in Computer Science",
   "education-uni2": "St. Petersburg State Polytechnical University, RU",
-  "education-title3": "Degree in Management"
+  "education-title3": "Degree in Management",
+  "education-uni3": "St. Petersburg State Polytechnical University, RU"
 }
