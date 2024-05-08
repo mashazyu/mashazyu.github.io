@@ -4,11 +4,6 @@
   .article-container {flex-basis: 100%;}
   .skills {width: 100%;}
   .about-block {margin-bottom: 1em;}
-
-  .tile {
-    height: 5rem;
-    flex-basis: 100%;
-  }
 }
 
 @media only screen and (min-width: 480px) {
@@ -30,11 +25,6 @@
     flex-wrap: wrap;
     width: 100%;
   }
-
-  .tile {
-    height: 6rem;
-    flex-basis: 45%;
-  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -53,8 +43,6 @@
   }
   .article-container {flex-basis: 59%;}
   .about-block {flex-basis: 35%;}
-
-  .tile {height: 9rem;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -70,14 +58,8 @@
     line-height: 1.3rem;
   }
 
-  .tile { height: 4rem;}
   .skills {flex-basis: 35%;}
   .side-column-container {flex-basis: 100%;}
   .article-container {flex-basis: 59%;}
   .about-block {flex-basis: 35%;}
-
-  .tile {
-   height: 9rem;
-   flex-basis: 30%;
-  }
 }

@@ -97,7 +97,6 @@ ul {
 }
 
 .main-area-table tr th:first-child {width: 30%;}
-.tile {padding: 1rem 1rem 1rem 0;}
 
 .container {
   display: flex;
@@ -110,13 +109,6 @@ ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-}
-
-.tile-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .footer {
