@@ -10,50 +10,12 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="responsive.css">
   <link rel="icon" type="image/png" href="assets/favicon.ico">
-  <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    var language;
-    var translations;
-
-    function loadTranslations() {
-      const path = '/locales/' + language + '.json';
-
-      $.getJSON(path)
-        .done( (data) => {
-          translations = data;
-
-          Object.keys(translations).forEach(key => {
-            $(`#${key}`).text(translations[key]);
-          });
-        });
-    }
-
-    window.onload = function() {
-      language = 'en';
-
-      loadTranslations();
-    }
-
-    function changeLanguage() {
-      language = language === 'en' ? 'de' : 'en';
-
-      loadTranslations();
-    }
-  </script>
 </head>
 <body>
   <section class="container">
     <section class="about">
       <div class="line header">
-        <h1 id="title">maria zadnepryanets - jr. front-end developer</h1>
-        <select onchange="changeLanguage()">
-          <option value="en">EN</option>
-          <option value="fr">DE</option>
-        </select>
+        <h1>maria zadnepryanets - software developer</h1>
       </div>
       <section class="about-block">
         <div class="side-column-container">
@@ -68,7 +30,7 @@
     <section class="skills">
       <div class="side-column-container">
         <section>
-          <h2 id="technical-skills">technical skills</h2>
+          <h2>technical skills</h2>
           <table class="side-menu-table">
             <tr>
               <th>
@@ -161,17 +123,17 @@
           </table>
         </section>
         <section>
-          <h2 id="soft-skills">soft skills</h2>
-          <p id="soft-skills-line1">Persistence & Patience</p>
-          <p id="soft-skills-line2">Teamplayer</p>
-          <p id="soft-skills-line3">Strong Work Ethic</p>
-          <p id="soft-skills-line3">Problem-Solving</p>
+          <h2>soft skills</h2>
+          <p>Persistence & Patience</p>
+          <p>Teamplayer</p>
+          <p>Strong Work Ethic</p>
+          <p>Problem-Solving</p>
         </section>
         <section>
-          <h2 id="languages">languages</h2>
+          <h2>languages</h2>
           <table class="side-menu-table">
             <tr>
-              <th id="languages-en">
+              <th>
                 English
               </th>
               <th>
@@ -179,7 +141,7 @@
               </th>
             </tr>
             <tr>
-              <th id="languages-de">
+              <th>
                 German
               </th>
               <th>
@@ -187,7 +149,7 @@
               </th>
             </tr>
             <tr>
-              <th id="languages-ru">
+              <th>
                 Russian
               </th>
               <th>
@@ -197,50 +159,50 @@
           </table>
         </section>
         <section>
-          <h2 id="education">education</h2>
+          <h2>education</h2>
           <table class="side-menu-table">
             <tr>
               <p>2014 - 2017</p>
-              <h3 id="education-title1">Master in Project Management</h3>
+              <h3>Master in Project Management</h3>
               <p>Fachhochschule Dortmund, DE</p>
             </tr>
             <tr>
               <p>1999 - 2005</p>
-              <h3 id="education-title2">Master in Computer Science</h3>
-              <p id="education-uni2">St. Petersburg State Polytechnical University, RU</p>
+              <h3>Master in Computer Science</h3>
+              <p>St. Petersburg State Polytechnical University, RU</p>
             </tr>
             <tr>
               <p>1999 - 2005</p>
-              <h3 id="education-title3">Degree in Management</h3>
-              <p id="education-uni3">St. Petersburg State Polytechnical University, RU</p>
+              <h3>Degree in Management</h3>
+              <p>St. Petersburg State Polytechnical University, RU</p>
             </tr>
           </table>
         </section>
         <section>
-          <h2 id="education">contact information</h2>
+          <h2>contact information</h2>
           <div class="line">
-            <h3 id="about-email">email:</h3><p><a href="mailto:mariya.z@gmail.com">mariya.z@gmail.com</a></p>
+            <h3>email:</h3><p><a href="mailto:mariya.z@gmail.com">mariya.z@gmail.com</a></p>
           </div>
           <div class="line">
-            <h3 id="about-mobile">mobile:</h3><p>+49 162 398 4193</p>
+            <h3>mobile:</h3><p>+49 162 398 4193</p>
           </div>
           <div class="line">
-            <a href="https://mashazyu.github.io/"><h3 id="about-website">website</h3></a>
-            <a download="Maria_Zadnepryanets(en).pdf" href="/assets/cv(en).pdf" id="about-resume">resume(pdf)</a>
+            <a href="https://mashazyu.github.io/"><h3>website</h3></a>
+            <a download="Maria_Zadnepryanets(en).pdf" href="/assets/cv(en).pdf">resume(pdf)</a>
           </div>
         </section>
       </div>
     </section>
     <article class="article-container">
       <section>
-        <h2 id="work-experience">work experience</h2>
+        <h2>work experience</h2>
         <table class="main-area-table">
           <tr>
-            <th id="work-period0">10.2022 - now</th>
+            <th>10.2022 - now</th>
             <th>
               <div class="work-experience-line">
-                <h3 id="work-title0">Junior Consultant,</h3>
-                <p id="work-place0">Wunderdog GmbH</p>
+                <h3>Junior Consultant,</h3>
+                <p>Wunderdog GmbH</p>
               </div>
               <div>
                 <p>I had several front-end assignments during my time at the agency:</p>
@@ -253,11 +215,11 @@
             </th>
           </tr>
           <tr>
-            <th id="work-period1">11.2020 - 09.2022</th>
+            <th>11.2020 - 09.2022</th>
             <th>
               <div class="work-experience-line">
-                <h3 id="work-title1">Fullstack Developer,</h3>
-                <p id="work-place1">Dampsoft GmbH</p>
+                <h3>Fullstack Developer,</h3>
+                <p>Dampsoft GmbH</p>
               </div>
               <div>
                 <p>My main responsibilities included maintenance, troubleshooting, and fixing bugs reported by end users. I also developed new features across the entire stack, from the React Native mobile app, through the Ruby on Rails and Sinatra backend, to the React and TypeScript web applications. I upgraded React Native to a newer version and performed the necessary refactoring and package updates.</p>
@@ -268,10 +230,10 @@
             </th>
           </tr>
           <tr>
-            <th id="work-period2">01.2020</th>
+            <th>01.2020</th>
             <th>
               <div class="work-experience-line">
-                <h3 id="work-title2">Freelancer</h3>
+                <h3>Freelancer</h3>
               </div>
               <div>
                 <p>My task was to develop a website. The requirement was to use the Hugo static site generator, which allows to create website content using a simple text editor. Based on the provided designs, I created the necessary content types, templates and styled them.</p>
@@ -280,11 +242,11 @@
             </th>
           </tr>
           <tr>
-            <th id="work-period3">04.2019 - 06.2023</th>
+            <th>04.2019 - 06.2023</th>
             <th>
               <div class="work-experience-line">
-                <h3 id="work-title3">Mobile Developer,</h3>
-                <p id="work-place3">drip (OSS menstrual cycle tracking app)</p>
+                <h3>Mobile Developer,</h3>
+                <p>drip (OSS menstrual cycle tracking app)</p>
               </div>
               <div>
                 <p>As part of the team, I maintained the app, fixed bugs reported by end users, developed new features, released new versions of the app, prepared work plans, wrote grant applications, and so on.</p>
