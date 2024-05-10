@@ -9,17 +9,12 @@
   .skills > div {
     width: 100%;
   }
-  .about-block {margin-bottom: 1em;}
+
+  img {display: none;}
 }
 
 @media only screen and (min-width: 480px) {
   .container {margin: 5%;}
-  .about-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
   .skills {
     display: flex;
     flex-direction: row;
@@ -27,9 +22,8 @@
     flex-wrap: wrap;
     order: 3;
   }
-  .skills > div {
-    width: 100%;
-  }
+  .skills > div {width: 100%;}
+  img {display: none;}
 }
 
 @media only screen and (min-width: 600px) {
@@ -37,10 +31,6 @@
   .side-column-container > div {
     width: 45%;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .container {margin: 5% 15%;}
 }
 
 @media only screen and (min-width: 992px) {
@@ -55,7 +45,8 @@
     width: 100%;
   }
   .article-container {flex-basis: 59%;}
-  .about-block {flex-basis: 35%;}
+
+  img {display: block;}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -74,5 +65,4 @@
   .skills {flex-basis: 35%;}
   .side-column-container {flex-basis: 100%;}
   .article-container {flex-basis: 59%;}
-  .about-block {flex-basis: 35%;}
 }

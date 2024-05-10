@@ -41,9 +41,9 @@ p, th, ul, li {
 }
 
 img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem
+  max-width: 18.75rem;
+  max-height: 18.75rem;
+  margin-left: 2rem;
 }
 
 select {
@@ -69,7 +69,6 @@ ul {
   justify-content: space-between;
   align-items: baseline;
 }
-.header {width: 100%;}
 .line p {text-align: right;}
 .work-experience-line h3,
 .work-experience-line p {display: inline;}
@@ -99,7 +98,8 @@ ul {
 }
 
 .main-area-table tr th:first-child {width: 30%;}
-.main-area-table p {
+.main-area-table p,
+.about p {
   padding-top: .7rem;
   padding-bottom: .7rem;
 }
@@ -113,7 +113,6 @@ ul {
 
 .about {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
 }
 
