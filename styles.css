@@ -74,21 +74,23 @@ ul {
 .work-experience-line h3,
 .work-experience-line p {display: inline;}
 .work-experience-line p {margin-left: 1rem;}
+.side-column-container { align-content: flex-start; }
 .side-menu-table {width: 100%;}
 
 .work-experience-stack {font-weight: 500;}
 
-.side-menu-table  tr th:first-child {
-  text-align: left;
-  width: 40%;
-}
+.side-menu-table  tr th:first-child {text-align: left;}
 
 .side-menu-table tr th:last-child {
   text-align: right;
-  font-size: 1.5rem;
-  padding: 0rem;
+  font-size: 1.3rem;
   color: var(--accent-color-light);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.side-column-container th,
+.side-column-container section > h3 {
+  line-height: 2.5rem;
 }
 
 .main-area-table {
@@ -111,12 +113,12 @@ ul {
   justify-content: space-between;
 }
 
-.footer {
+footer {
   display: flex;
   justify-content: center;
   font-size: 0.7rem;
 }
 
-.footer a {
+footer a {
   margin: 0 0.25rem;
 }
