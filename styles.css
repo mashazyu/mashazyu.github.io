@@ -99,6 +99,10 @@ ul {
 }
 
 .main-area-table tr th:first-child {width: 30%;}
+.main-area-table p {
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+}
 
 .container {
   display: flex;
