@@ -1,22 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173126877-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-173126877-1');
-  </script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K4T2ZV8');</script>
-  <!-- End Google Tag Manager -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Maria Zadnepryanets</title>
   <meta name="author" content="Maria Zadnepryanets">
@@ -26,338 +10,250 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="responsive.css">
   <link rel="icon" type="image/png" href="assets/favicon.ico">
-  <!--[if lt IE 9]>
-  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-  <![endif]-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    var language;
-    var translations;
-
-    function loadTranslations() {
-      const path = '/locales/' + language + '.json';
-
-      $.getJSON(path)
-        .done( (data) => {
-          translations = data;
-
-          Object.keys(translations).forEach(key => {
-            $(`#${key}`).text(translations[key]);
-          });
-        });
-    }
-
-    window.onload = function() {
-      language = 'en';
-
-      loadTranslations();
-    }
-
-    function changeLanguage() {
-      language = language === 'en' ? 'de' : 'en';
-
-      loadTranslations();
-    }
-  </script>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4T2ZV8"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <section class="container">
+  <main>
     <section class="about">
-      <div class="line header">
-        <h1 id="title">maria zadnepryanets - jr. front-end developer</h1>
-        <select onchange="changeLanguage()">
-          <option value="en">EN</option>
-          <option value="fr">DE</option>
-        </select>
-      </div>
-      <section class="about-block">
-        <div class="side-column-container">
-          <img src="assets/foto.jpg" alt="maria's photo" >
-        </div>
-        <div class="side-column-container">
-          <div class="line">
-            <h3 id="about-visa">visa:</h3><p id="about-visa-value">residence permit</p>
-          </div>
-          <div class="line">
-            <h3 id="about-date-of-birth">date of birth:</h3><p>24.05.1982</p>
-          </div>
-          <div class="line">
-            <h3 id="about-address">address:</h3><p>Chodowieckistr. 30, Berlin</p>
-          </div>
-          <div class="line">
-            <h3 id="about-email">email:</h3><p><a href="mailto:mariya.z@gmail.com">mariya.z@gmail.com</a></p>
-          </div>
-          <div class="line">
-            <h3 id="about-mobile">mobile:</h3><p>+49 162 398 4193</p>
-          </div>
-          <div class="line">
-            <a href="https://mashazyu.github.io/"><h3 id="about-website">website</h3></a>
-            <a download="Maria_Zadnepryanets(en).pdf" href="/assets/cv(en).pdf" id="about-resume">resume(pdf)</a>
-          </div>
-        </div>
-      </section>
-      <section class="article-container">
-        <p id="about-intro">I’m looking for an opportunity to join a Software Development team to</p>
-        <ul>
-          <li id="about-point1">apply and widen my technical skills,</li>
-          <li id="about-point2">work on interesting project and</li>
-          <li id="about-point3">learn how to solve complex problems with simple code.</li>
-        </ul>
-        <section>
-          <h2 id="projects">projects</h2>
-          <div class="tile-container">
-            <div class="tile">
-              <a href="https://github.com/mashazyu/drip" target="_blank">
-                <h3 id="projects-drip">drip (open source)</h3>
-              </a>
-              <p>React Native, e2e tests</p>
-            </div>
-            <div class="tile">
-              <a href="https://github.com/mashazyu/adventofcode" target="_blank">
-                <h3>Advent of Code</h3>
-              </a>
-              <p id="projects-aoc-description">Node.js, TDD, programming puzzles</p>
-            </div>
-            <div class="tile">
-              <a href="https://github.com/mashazyu/dictionary-search" target="_blank">
-                <h3 id="projects-search">Dictionary search</h3>
-              </a>
-              <p>Node.js, REST API</p>
-            </div>
-            <div class="tile">
-              <a href="https://github.com/mashazyu/fliit-repo" target="_blank">
-                <h3>fliit-repo</h3>
-              </a>
-              <p>React, JS, Admin-on-rest</p>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="skills">
-      <div class="side-column-container">
-        <section>
-          <h2 id="technical-skills">technical skills</h2>
-          <table class="side-menu-table">
-            <tr>
-              <th>
-                HTML
-              </th>
-              <th>
-                &#9632;&#9632;&#9633;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                CSS
-              </th>
-              <th>
-                &#9632;&#9632;&#9633;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                JavaScript(ES6)
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                React/JSX
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                React Native
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                Node.js
-              </th>
-              <th>
-                &#9632;&#9633;&#9633;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                MongoDB
-              </th>
-              <th>
-                &#9632;&#9633;&#9633;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                Git
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9633;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th>
-                Webpack
-              </th>
-              <th>
-                &#9632;&#9633;&#9633;&#9633;&#9633;
-              </th>
-            </tr>
-          </table>
-        </section>
-      </div>
-      <div class="side-column-container">
-        <section>
-          <h2 id="languages">languages</h2>
-          <table class="side-menu-table">
-            <tr>
-              <th id="languages-en">
-                English
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9632;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th id="languages-de">
-                German
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9632;&#9633;
-              </th>
-            </tr>
-            <tr>
-              <th id="languages-ru">
-                Russian
-              </th>
-              <th>
-                &#9632;&#9632;&#9632;&#9632;&#9632;
-              </th>
-            </tr>
-          </table>
-        </section>
-        <section>
-          <h2 id="soft-skills">soft skills</h2>
-          <p id="soft-skills-line1">Reliable & Structured</p>
-          <p id="soft-skills-line2">Creative & Solution-oriented</p>
-          <p id="soft-skills-line3">Teamplayer & Open-minded</p>
-        </section>
       <div>
+        <h1>maria zadnepryanets - software developer</h1>
+        <p>I am a full-stack developer with 3 years of professional and 4 years of open source experience. I am most comfortable using JavaScript technologies such as React & React Native, but I would also like to continue developing my backend skills.</p>
+        <p>I've been praised for being a reliable team member and not giving up even when the problem seems very difficult. I enjoy solving problems, learning new things, and being part of a team.</p>
+      </div>
+      <img src="assets/foto(600x600).jpg" alt="Maria Zadnepryanets"/>
     </section>
-    <article class="article-container">
+    <aside class="skills side-column-container">
+      <div>
+        <section>
+          <h2>technical skills</h2>
+          <table>
+            <tr>
+              <td>
+                CSS
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9632;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                HTML
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9632;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                JavaScript(ES6)
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9632;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                React.js/React Native
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                React (Native) Testing Library
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Redux
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                TypeScript
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                styled components
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Cypress Testing library
+              </td>
+              <td>
+                &#9632;&#9632;&#9633;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Redux Toolkit
+              </td>
+              <td>
+                &#9632;&#9632;&#9633;&#9633;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Ruby on Rails
+              </td>
+              <td>
+                &#9632;&#9632;&#9633;&#9633;&#9633;
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>languages</h2>
+          <table>
+            <tr>
+              <td>
+                English
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9632;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                German
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9632;&#9633;
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Russian
+              </td>
+              <td>
+                &#9632;&#9632;&#9632;&#9632;&#9632;
+              </td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <div>
+        <section>
+          <h2>soft skills</h2>
+          <p>Persistence & Patience</p>
+          <p>Teamplayer</p>
+          <p>Strong Work Ethic</p>
+          <p>Problem-Solving</p>
+        </section>
+        <section>
+          <h2>education</h2>
+          <table>
+            <tr>
+              <td>
+              <h3>Master in Project Management</h3>
+              <p>Fachhochschule Dortmund (DE), 2014 - 2017</p>
+              </td>
+            </tr>
+            <tr>
+              <h3>Master in Computer Science</h3>
+              <p>SPb State Polytechnic University (RU), 1999 - 2005</p>
+            </tr>
+            <tr>
+              <h3>Specialist Degree in Management</h3>
+              <p>SPb State Polytechnic University (RU), 1999 - 2005</p>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>contact information</h2>
+          <div class="line">
+            <h3>email:</h3><p><a href="mailto:mariya.z@gmail.com">mariya.z@gmail.com</a></p>
+          </div>
+          <div class="line">
+            <h3>mobile:</h3><p>+49 162 398 4193</p>
+          </div>
+          <div class="line">
+            <a href="https://mashazyu.github.io/"><h3>website</h3></a>
+            <a download="Maria_Zadnepryanets(en).pdf" href="/assets/cv(en).pdf">resume(pdf)</a>
+          </div>
+        </section>
+      </div>
+    </aside>
+    <article>
       <section>
-        <h2 id="work-experience">work experience</h2>
-        <table class="main-area-table">
+        <h2>work experience</h2>
+        <table>
           <tr>
-            <th id="work-period0">2020 - now</th>
-            <th>
+            <td>10.2022 - now</td>
+            <td>
+              <div class="work-experience-line">
+                <h3>Junior Consultant,</h3>
+                <p><a href="https://www.wunderdog.io/" target="_blank">Wunderdog GmbH</a></p>
+              </div>
+              <div>
+                <p>I had several front-end assignments during my time at the agency:</p>
+                <ul>
+                  <li>As part of a cross-functional Scrum team, I implemented new features using an existing design system for an internal portal and supported existing features.</li>
+                  <li>Supporting and improving the accessibility of the company website. Supporting and improving the accessibility of the company website. The site was built using the Gatsby static site generator, and its content is managed by Contentful.</li>
+                </ul>
+                <p><u>Tech stack:</u> React, React Hooks, JavaScript, TypeScript, styled components, Cypress testing library, React Testing Library, Gatsby, Contentful, Redux, Redux Toolkit, FullCalendar, Figma.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>11.2020 - 09.2022</td>
+            <td>
+              <div class="work-experience-line">
+                <h3>Fullstack Developer,</h3>
+                <p><a href="https://www.dampsoft.de/athena/" target="_blank">Dampsoft GmbH</a></p>
+              </div>
+              <div>
+                <p>My main responsibilities included maintenance, troubleshooting, and fixing bugs reported by end users. I also developed new features across the entire stack, from the React Native mobile app, through the Ruby on Rails and Sinatra backend, to the React and TypeScript web applications. I upgraded React Native to a newer version and performed the necessary refactoring and package updates.</p>
+                <p>While working at Athena, I was promoted from junior full-stack developer to mid-level.</p>
+                <p>From November 2020 to April 2022 the working language of the department was German.</p>
+                <p><u>Tech stack:</u> React Native app (iOS only), Ruby on Rails management interface, Sinatra backend and React & TypeScript online anamnesis interface.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>01.2020 - 01.2020</td>
+            <td>
               <div class="work-experience-line">
                 <h3>Freelancer</h3>
-                <p></p>
               </div>
-                <p class="work-experience-stack">React, Redux, Less, React Testing Library</p>
-              <ul>
-                <li id="work0-description1">new feature development</li>
-                <li id="work0-description2">tests development</li>
-                <li id="work0-description3">prepare technical requirements and wireframes</li>
-              </ul>
-            </th>
+              <div>
+                <p>My task was to develop a website. The requirement was to use the Hugo static site generator, which allows to create website content using a simple text editor. Based on the provided designs, I created the necessary content types, templates and styled them.</p>
+                <p><u>Tech stack:</u> Hugo, HTML, CSS</p>
+              </div>
+            </td>
           </tr>
           <tr>
-            <th id="work-period1">2019 - now</th>
-            <th>
+            <td>04.2019 - 06.2023</td>
+            <td>
               <div class="work-experience-line">
-                <h3 id="work-title1">Contributor,</h3>
-                <p><a href="https://bloodyhealth.gitlab.io/" title="drip" target="_blank">drip</a></p>
+                <h3>Mobile Developer,</h3>
+                <p><a href="https://dripapp.org/" target="_blank">drip (OSS menstrual cycle tracking app)</a></p>
               </div>
-                <p class="work-experience-stack">React Native, Redux, Mocha</p>
-              <ul>
-                <li id="work1-description1">new feature development</li>
-                <li id="work1-description2">e2e tests development</li>
-                <li id="work1-description3">redesign & refactoring</li>
-              </ul>
-            </th>
-          </tr>
-          <tr>
-            <th>2018 - 2019</th>
-            <th>
-              <div class="work-experience-line">
-                <h3 id="work-title2">Interpreter (DE &#8596; RU),</h3>
-                <p id="work-place2">social sphere</p>
+              <div>
+                <p>As part of the team, I maintained the app, fixed bugs reported by end users, developed new features, released new versions of the app, prepared work plans, wrote grant applications, and so on.</p>
+                <p>I am particularly proud of coding the new design of the app. I have also contributed to the development of the project website and the introduction of unit testing using the React Native Testing Library.</p>
+                <p><u>Tech stack:</u> React Native, JavaScript, Redux, Mocha, React Native Testing Library</p>
               </div>
-              <ul>
-                <li id="work2-description1">interpreting between refugees & social/government workers, doctors, etc.</li>
-              </ul>
-            </th>
-          </tr>
-          <tr>
-            <th>2016 - 2017</th>
-            <th>
-              <div class="work-experience-line">
-                <h3 id="work-title3">Project manager,</h3>
-                <p id="work-place3">software and marketing teams</p>
-              </div>
-              <ul>
-                <li id="work3-description1">conceptualizing, planning, execution of projects</li>
-                <li id="work3-description2">reporting of the project status/outcomes to key stakeholders</li>
-              </ul>
-            </th>
-          </tr>
-          <tr>
-            <th>2003 - 2014</th>
-            <th>
-              <div class="work-experience-line">
-                <h3 id="work-title4">Support Rep => Department Manager,</h3>
-                <p id="work-place4">SaaS provider</p>
-              </div>
-              <ul>
-                <li id="work4-description1">planning, budgeting and overseeing department operations</li>
-              </ul>
-            </th>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <h2 id="education">education</h2>
-        <table class="main-area-table">
-          <tr>
-            <th>2014 - 2017</th>
-            <th>
-              <h3 id="education-title1">Master in Project Management</h3>
-              <p>Fachhochschule Dortmund, DE</p>
-            </th>
-          </tr>
-          <tr>
-            <th>1999 - 2005</th>
-            <th>
-              <h3 id="education-title2">Master in Computer Science</h3>
-              <p id="education-uni2">St. Petersburg State Polytechnical University, RU</p>
-            </th>
-          </tr>
-          <tr>
-            <th>1999 - 2005</th>
-            <th>
-              <h3 id="education-title3">Degree in Management</h3>
-              <p id="education-uni3">St. Petersburg State Polytechnical University, RU</p>
-            </th>
+            </td>
           </tr>
         </table>
       </section>
     </article>
-  </section>
-  <div class="footer">Icons made by <a href="http://www.freepik.com/" title="Freepik"  target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"  target="_blank">www.flaticon.com</a></div>
+  </main>
+  <footer>Icons made by <a href="http://www.freepik.com/" title="Freepik"  target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"  target="_blank">www.flaticon.com</a></footer>
 </body>
 </html>
