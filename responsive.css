@@ -1,7 +1,7 @@
 @media only screen and (max-width: 480px) {
-  .container {margin: 3%;}
+  main {margin: 3%;}
   .side-column-container {flex-basis: 100%;}
-  .article-container {flex-basis: 100%;}
+  article {flex-basis: 100%;}
   .skills {
     order: 3;
     width: 100%;
@@ -14,7 +14,7 @@
 }
 
 @media only screen and (min-width: 480px) {
-  .container {margin: 5%;}
+  main {margin: 5%;}
   .skills {
     display: flex;
     flex-direction: row;
@@ -27,7 +27,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .container {margin: 5% 10%;}
+  main {margin: 5% 10%;}
   .side-column-container > div {
     width: 45%;
   }
@@ -44,25 +44,24 @@
   .side-column-container > div {
     width: 100%;
   }
-  .article-container {flex-basis: 59%;}
-
+  article {flex-basis: 59%;}
   img {display: block;}
 }
 
 @media only screen and (min-width: 1200px) {
-  .container {margin: 5% 18%;}
+  main {margin: 5% 18%;}
 }
 
 @media print {
   h1, h2, h3 {font-size: 1rem;}
   h1, h2 {margin: 1rem 0;}
 
-  p, th, ul, li {
+  p, td, ul, li {
     font-size: 0.8rem;
     line-height: 1.3rem;
   }
 
   .skills {flex-basis: 35%;}
   .side-column-container {flex-basis: 100%;}
-  .article-container {flex-basis: 59%;}
+  article {flex-basis: 59%;}
 }

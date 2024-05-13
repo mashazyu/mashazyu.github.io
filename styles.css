@@ -34,7 +34,7 @@ h1 {
 h2 {margin: 3rem 0 2rem 0;}
 h3 {font-size: 1rem;}
 
-p, th, ul, li {
+p, td, ul, li {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.8rem;
@@ -56,7 +56,8 @@ table {
   border-spacing: 0;
 }
 
-th {vertical-align: top;}
+td {vertical-align: top;}
+td:first-child {padding-right: 1rem;}
 
 ul {
   list-style-type: square;
@@ -74,37 +75,33 @@ ul {
 .work-experience-line p {display: inline;}
 .work-experience-line p {margin-left: 1rem;}
 .side-column-container { align-content: flex-start; }
-.side-menu-table {width: 100%;}
-
-.work-experience-stack {font-weight: 500;}
-
-.side-menu-table  tr th:first-child {text-align: left;}
-
-.side-menu-table tr th:last-child {
+aside table {width: 100%;}
+aside table tr td:first-child {text-align: left;}
+aside table tr td:last-child {
   text-align: right;
   font-size: 1.3rem;
   color: var(--accent-color-light);
   letter-spacing: 0.3rem;
 }
 
-.side-column-container th,
-.side-column-container section > h3 {
+aside td,
+aside section > h3 {
   line-height: 2.5rem;
 }
 
-.main-area-table {
+.work-experience-stack {font-weight: 500;}
+main table {
   width: 100%;
   text-align: left;
 }
-
-.main-area-table tr th:first-child {width: 30%;}
-.main-area-table p,
+main table tr td:first-child {width: 30%;}
+main table p,
 .about p {
   padding-top: .7rem;
   padding-bottom: .7rem;
 }
 
-.container {
+main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
