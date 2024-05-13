@@ -1,5 +1,5 @@
 @media only screen and (max-width: 480px) {
-  main {margin: 3%;}
+  body {margin: 3%;}
   article {flex-basis: 100%;}
   aside {
     order: 3;
@@ -13,7 +13,7 @@
 }
 
 @media only screen and (min-width: 480px) {
-  main {margin: 5%;}
+  body {margin: 5%;}
   aside {
     display: flex;
     flex-direction: row;
@@ -26,7 +26,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-  main {margin: 5% 10%;}
+  body {margin: 5% 10%;}
   aside > div {
     width: 45%;
   }
@@ -46,7 +46,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  main {margin: 5% 18%;}
+  body {margin: 5% 18%;}
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    max-width: 75rem;
+    margin: 10% auto 5% auto;
+  }
 }
 
 @media print {
