@@ -46,11 +46,6 @@ img {
   margin-left: 2rem;
 }
 
-select {
-  border: 0;
-  margin-left: 2rem;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -73,11 +68,10 @@ ul {
 .line p {text-align: right;}
 .work-experience-line h3,
 .work-experience-line p {display: inline;}
-.work-experience-line p {margin-left: 1rem;}
 .side-column-container { align-content: flex-start; }
 aside table {width: 100%;}
 aside table tr td:first-child {text-align: left;}
-aside table tr td:last-child {
+.skill-grade table tr td:last-child {
   text-align: right;
   font-size: 1.3rem;
   color: var(--accent-color-light);
@@ -89,13 +83,12 @@ aside section > h3 {
   line-height: 2.5rem;
 }
 
-.work-experience-stack {font-weight: 500;}
-main table {
+article table {
   width: 100%;
   text-align: left;
 }
-main table tr td:first-child {width: 30%;}
-main table p,
+article table tr td:first-child {width: 30%;}
+article table p,
 .about p {
   padding-top: .7rem;
   padding-bottom: .7rem;
@@ -117,6 +110,7 @@ footer {
   display: flex;
   justify-content: center;
   font-size: 0.7rem;
+  margin-top: 3rem;
 }
 
 footer a {
