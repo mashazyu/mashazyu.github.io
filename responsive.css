@@ -1,12 +1,11 @@
 @media only screen and (max-width: 480px) {
   main {margin: 3%;}
-  .side-column-container {flex-basis: 100%;}
   article {flex-basis: 100%;}
-  .skills {
+  aside {
     order: 3;
     width: 100%;
   } 
-  .skills > div {
+  aside > div {
     width: 100%;
   }
 
@@ -15,33 +14,31 @@
 
 @media only screen and (min-width: 480px) {
   main {margin: 5%;}
-  .skills {
+  aside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     order: 3;
   }
-  .skills > div {width: 100%;}
+  aside > div {width: 100%;}
   img {display: none;}
 }
 
 @media only screen and (min-width: 600px) {
   main {margin: 5% 10%;}
-  .side-column-container > div {
+  aside > div {
     width: 45%;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .skills{
+  aside {
     flex-basis: 35%;
+    margin-right: 1rem;
     order: 0;
   }
-  .side-column-container {
-    margin-right: 1rem;
-  }
-  .side-column-container > div {
+  aside > div {
     width: 100%;
   }
   article {flex-basis: 59%;}
@@ -61,7 +58,6 @@
     line-height: 1.3rem;
   }
 
-  .skills {flex-basis: 35%;}
-  .side-column-container {flex-basis: 100%;}
+  aside {flex-basis: 35%;}
   article {flex-basis: 59%;}
 }

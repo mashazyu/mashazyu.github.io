@@ -46,11 +46,6 @@ img {
   margin-left: 2rem;
 }
 
-select {
-  border: 0;
-  margin-left: 2rem;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -73,7 +68,6 @@ ul {
 .line p {text-align: right;}
 .work-experience-line h3,
 .work-experience-line p {display: inline;}
-.work-experience-line p {margin-left: 1rem;}
 .side-column-container { align-content: flex-start; }
 aside table {width: 100%;}
 aside table tr td:first-child {text-align: left;}
@@ -89,7 +83,6 @@ aside section > h3 {
   line-height: 2.5rem;
 }
 
-.work-experience-stack {font-weight: 500;}
 article table {
   width: 100%;
   text-align: left;
