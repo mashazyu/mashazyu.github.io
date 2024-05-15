@@ -56,7 +56,17 @@
   }
 }
 
+/* 
+Remove printing attributes on the printed version.
+More info can be found here: https://stackoverflow.com/a/2573612
+
+@page { size: auto;  margin: 0mm; } 
+*/
 @media print {
+  body {
+    margin: 0;
+    padding: 5%;
+  }
   h1, h2, h3 {font-size: 1rem;}
   h1, h2 {margin: 1rem 0;}
 
