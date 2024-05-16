@@ -1,8 +1,8 @@
 :root {
-  --accent-color: #1e35a4;
-  --accent-color-light: #334759;
-  --link-color: #262450;
-  --visited-link-color: #7F7478;
+  --accent-color: #222;
+  --accent-color-light: #bb3825;
+  --link-color: #2455c3;
+  --visited-link-color: #454555;
 }
 
 * {
@@ -11,28 +11,28 @@
   box-sizing: border-box;
 }
 
-a {color: var(--link-color);}
-a:visited {color: var(--visited-link-color);}
+a {
+  color: var(--link-color);
+  font-family: "Franklin ITC", sans-serif;
+  font-weight: bold;
+}
 
-html {font-family: 'Libre Franklin', sans-serif;}
+body {font-family: Georgia, Times, Times New Roman, serif;}
 
-h1, h2, h3 {font-family: "Trebuchet MS", Verdana, sans-serif;}
-
-h1, h2 {
+h1, h2, h3, h4 {
   color: var(--accent-color);
-  font-size: 1.3rem;
+  font-family: "Franklin ITC", sans-serif;
 }
 
-h3 {color: var(--accent-color-light);}
-
-h1 {
-  text-transform: uppercase;
-  margin-bottom: 3rem;
-  width: 100%;
+h1 {margin-bottom: 2rem;}
+h2 {
+  font-weight: normal;
+  margin: 3rem 0 2rem 0;
 }
-
-h2 {margin: 3rem 0 2rem 0;}
-h3 {font-size: 1rem;}
+h3 {
+  font-weight: normal;
+  margin-bottom: .5rem;
+}
 
 p, td, ul, li {
   font-size: 1rem;
@@ -41,6 +41,7 @@ p, td, ul, li {
 }
 
 img {
+  align-self: end;
   max-width: 18.75rem;
   max-height: 18.75rem;
   margin-left: 2rem;
@@ -70,14 +71,14 @@ li:last-child {padding-bottom: 0rem;}
   padding-top: .7rem;
 }
 .line p {text-align: right;}
-.work-experience-line h3,
+.work-experience-line h4,
 .work-experience-line p {display: inline;}
 .side-column-container { align-content: flex-start; }
 aside table {width: 100%;}
 aside table tr td:first-child {text-align: left;}
 .skill-grade table tr td:last-child {
   text-align: right;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: var(--accent-color-light);
   letter-spacing: 0.3rem;
 }
@@ -98,9 +99,8 @@ article table {
   width: 100%;
   text-align: left;
 }
-article table td {padding-bottom: 1.5rem;}
+article table tr {padding-bottom: 2rem;}
 article table tr:last-child{padding-bottom: 0;}
-article table tr td:first-child {width: 30%;}
 article table p,
 .about p {padding-top: 1.5rem;}
 
@@ -114,6 +114,11 @@ main {
 .about {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
 }
 
 footer {

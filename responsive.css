@@ -10,6 +10,17 @@
   }
 
   img {display: none;}
+
+  .work-experience tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-experience tr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -23,13 +34,23 @@
   }
   aside > div {width: 100%;}
   img {display: none;}
+
+  .work-experience tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-experience tr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
   body {margin: 5% 10%;}
-  aside > div {
-    width: 45%;
-  }
+  aside {width: 100%;}
+  aside > div {width: 45%;}
 }
 
 @media screen and (min-width: 992px) {
@@ -54,11 +75,38 @@
     max-width: 75rem;
     margin: 10% auto 5% auto;
   }
+  article table tr td:first-child {width: 30%;}
+  
+  .work-experience tbody {
+    display: table-row-group;
+  }
+
+  .work-experience tr {
+    display: table-row;
+    padding-bottom: 1.5rem;
+  }
 }
 
+/* 
+Remove printing attributes on the printed version.
+More info can be found here: https://stackoverflow.com/a/2573612
+*/
+@page { 
+  size: auto;  
+  margin: 0mm;
+} 
+
 @media print {
-  h1, h2, h3 {font-size: 1rem;}
-  h1, h2 {margin: 1rem 0;}
+  body {
+    margin: 0;
+    padding: 10mm 15mm;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  h3 {font-size: 1rem;}
+  h4 {font-weight: normal;}
 
   p, td, ul, li {
     font-size: 0.8rem;
@@ -66,5 +114,27 @@
   }
 
   aside {flex-basis: 35%;}
+  aside section {margin-bottom: 1.5rem;}
   article {flex-basis: 59%;}
+
+  .pagebreak { 
+    page-break-before: always; 
+    padding-top: 10mm;
+  }
+
+  .printed-version {margin-top: 0;}
+
+  .work-experience tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-experience tr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+
+  footer {padding-top: 9rem;}
 }
