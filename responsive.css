@@ -101,8 +101,12 @@ More info can be found here: https://stackoverflow.com/a/2573612
     margin: 0;
     padding: 10mm 15mm;
   }
-  h1, h2, h3 {font-size: 1rem;}
-  h1, h2 {margin: 1rem 0;}
+  h1, h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  h3 {font-size: 1rem;}
+  h4 {font-weight: normal;}
 
   p, td, ul, li {
     font-size: 0.8rem;
@@ -110,11 +114,15 @@ More info can be found here: https://stackoverflow.com/a/2573612
   }
 
   aside {flex-basis: 35%;}
+  aside section {margin-bottom: 1.5rem;}
   article {flex-basis: 59%;}
+
   .pagebreak { 
     page-break-before: always; 
     padding-top: 10mm;
   }
+
+  .printed-version {margin-top: 0;}
 
   .work-experience tbody {
     display: flex;
@@ -126,4 +134,7 @@ More info can be found here: https://stackoverflow.com/a/2573612
     flex-direction: column;
     padding-bottom: 2rem;
   }
+
+
+  footer {padding-top: 9rem;}
 }
