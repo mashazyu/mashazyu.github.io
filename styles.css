@@ -41,6 +41,7 @@ p, td, ul, li {
 }
 
 img {
+  align-self: end;
   max-width: 18.75rem;
   max-height: 18.75rem;
   margin-left: 2rem;
