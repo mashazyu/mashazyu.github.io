@@ -90,13 +90,16 @@
 /* 
 Remove printing attributes on the printed version.
 More info can be found here: https://stackoverflow.com/a/2573612
-
-@page { size: auto;  margin: 0mm; } 
 */
+@page { 
+  size: auto;  
+  margin: 0mm;
+} 
+
 @media print {
   body {
     margin: 0;
-    padding: 5%;
+    padding: 10mm 15mm;
   }
   h1, h2, h3 {font-size: 1rem;}
   h1, h2 {margin: 1rem 0;}
@@ -108,4 +111,19 @@ More info can be found here: https://stackoverflow.com/a/2573612
 
   aside {flex-basis: 35%;}
   article {flex-basis: 59%;}
+  .pagebreak { 
+    page-break-before: always; 
+    padding-top: 10mm;
+  }
+
+  .work-experience tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .work-experience tr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
 }
