@@ -19,10 +19,8 @@
   .work-experience tr {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
-
-  .work-experience td {padding-bottom: 0;}
 }
 
 @media screen and (min-width: 480px) {
@@ -45,17 +43,14 @@
   .work-experience tr {
     display: flex;
     flex-direction: column;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
-
-  .work-experience td {padding-bottom: 0;}
 }
 
 @media screen and (min-width: 600px) {
   body {margin: 5% 10%;}
-  aside > div {
-    width: 45%;
-  }
+  aside {width: 100%;}
+  aside > div {width: 45%;}
 }
 
 @media screen and (min-width: 992px) {
@@ -88,9 +83,8 @@
 
   .work-experience tr {
     display: table-row;
+    padding-bottom: 1.5rem;
   }
-
-  .work-experience td {padding-bottom: 1.5rem;}
 }
 
 /* 
