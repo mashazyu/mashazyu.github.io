@@ -97,12 +97,12 @@ More info can be found here: https://stackoverflow.com/a/2573612
     margin: 0;
     padding: 10mm 15mm;
   }
+  h1, h2, h3, a {font-weight: 500;}
   h1, h2 {
     font-size: 1.25rem;
     margin: 1rem 0;
   }
   h3 {font-size: 1rem;}
-  h4 {font-weight: normal;}
 
   p, td, ul, li {
     font-size: 0.8rem;
