@@ -72,7 +72,7 @@
 
 @media screen and (min-width: 1400px) {
   body {
-    max-width: 75rem;
+    max-width: 65rem;
     margin: 10% auto 5% auto;
   }
   article table tr td:first-child {width: 30%;}

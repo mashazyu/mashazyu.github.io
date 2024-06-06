@@ -35,8 +35,7 @@ p, td, ul, li {
 }
 
 img {
-  align-self: end;
-  height: 18.75rem;
+  max-height: 14rem;
   margin-left: 5rem;
 }
 
@@ -101,7 +100,7 @@ article table {
 article table tr {padding-bottom: 2rem;}
 article table tr:last-child{padding-bottom: 0;}
 article table p,
-.about p {padding-top: 1.5rem;}
+.about p {padding-bottom: 1.5rem;}
 
 main {
   display: flex;
