@@ -76,10 +76,6 @@
     margin: 10% auto 5% auto;
   }
   article table tr td:first-child {width: 30%;}
-  
-  .work-experience tbody {
-    display: table-row-group;
-  }
 
   .work-experience tr {
     display: table-row;
@@ -102,7 +98,7 @@ More info can be found here: https://stackoverflow.com/a/2573612
     padding: 10mm 15mm;
   }
   h1, h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 1rem 0;
   }
   h3 {font-size: 1rem;}
@@ -113,9 +109,18 @@ More info can be found here: https://stackoverflow.com/a/2573612
     line-height: 1.3rem;
   }
 
+  img {
+    height: 14rem;
+    margin-left: 3rem;
+  }
+
   aside {flex-basis: 35%;}
   aside section {margin-bottom: 1.5rem;}
   article {flex-basis: 59%;}
+
+  .about p {
+    font-size: 1rem;
+  }
 
   .pagebreak { 
     page-break-before: always; 
@@ -135,6 +140,5 @@ More info can be found here: https://stackoverflow.com/a/2573612
     padding-bottom: 2rem;
   }
 
-
-  footer {padding-top: 9rem;}
+  footer {padding-top: 13rem;}
 }
